@@ -5,12 +5,11 @@ pipeline {
         stage('Hello') {
             steps {
                 bat 'javac Hello.java'
-            }
-        }
-       stage('Build') {
-            steps {
                 bat 'java Hello'
             }
-        } 
+        }
+      
+            
+    
     }
 }
